@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="cakeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5EA" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FAF1E6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="standGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E2D0BE"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D4C0AD"/>
+    </linearGradient>
+    <linearGradient id="chocBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4A2814"/>
+      <stop offset="50%" stop-color="#6E3D1F"/>
+      <stop offset="100%" stop-color="#3A1E0E"/>
+    </linearGradient>
+    <linearGradient id="dripGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E170A"/>
+      <stop offset="100%" stop-color="#42220F"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#3A1E0E" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <circle cx="300" cy="320" r="260" fill="url(#cakeGlow)"/>
+
+  <!-- Cake Stand Base -->
+  <ellipse cx="300" cy="510" rx="140" ry="24" fill="url(#standGrad)" filter="url(#shadow)"/>
+  <path d="M285 410 L315 410 L325 500 L275 500 Z" fill="url(#standGrad)"/>
+  <ellipse cx="300" cy="410" rx="180" ry="22" fill="url(#standGrad)"/>
+  <ellipse cx="300" cy="406" rx="175" ry="18" fill="#FFFFFF"/>
+
+  <!-- Cake Bottom Shadow -->
+  <ellipse cx="300" cy="402" rx="150" ry="15" fill="#2E170A" opacity="0.3"/>
+
+  <!-- Cake Body Cylinder -->
+  <path d="M160 250 L160 380 C160 415 440 415 440 380 L440 250 Z" fill="url(#chocBody)" filter="url(#shadow)"/>
+
+  <!-- Chocolate Drips -->
+  <path d="M160 250 
+           C170 300 180 300 190 260 
+           C200 320 215 320 225 255
+           C235 340 250 340 260 260
+           C270 310 285 310 295 255
+           C305 350 320 350 330 260
+           C340 295 355 295 365 255
+           C375 330 390 330 400 260
+           C410 290 425 290 440 250
+           C440 230 160 230 160 250 Z" fill="url(#dripGrad)"/>
+
+  <!-- Cake Top Ellipse -->
+  <ellipse cx="300" cy="245" rx="140" ry="32" fill="url(#dripGrad)"/>
+  <ellipse cx="300" cy="242" rx="135" ry="28" fill="#5A3018"/>
+
+  <!-- Chocolate Swirls on Top -->
+  <circle cx="210" cy="235" r="14" fill="#3D1F0E"/>
+  <circle cx="245" cy="225" r="14" fill="#3D1F0E"/>
+  <circle cx="285" cy="220" r="15" fill="#3D1F0E"/>
+  <circle cx="325" cy="220" r="15" fill="#3D1F0E"/>
+  <circle cx="365" cy="228" r="14" fill="#3D1F0E"/>
+  <circle cx="395" cy="240" r="14" fill="#3D1F0E"/>
+
+  <!-- Fresh Strawberries on Top -->
+  <g id="strawberry1" transform="translate(265, 175) scale(0.9)">
+    <path d="M35 15 C15 15 5 45 35 75 C65 45 55 15 35 15 Z" fill="#D32F2F"/>
+    <ellipse cx="35" cy="20" rx="18" ry="8" fill="#B71C1C"/>
+    <!-- green crown -->
+    <path d="M35 12 L20 2 L28 15 L12 18 L28 22 L35 15 L42 22 L58 18 L42 15 L50 2 Z" fill="#388E3C"/>
+    <!-- seeds -->
+    <circle cx="28" cy="35" r="1.5" fill="#FFF59D"/>
+    <circle cx="42" cy="35" r="1.5" fill="#FFF59D"/>
+    <circle cx="35" cy="48" r="1.5" fill="#FFF59D"/>
+    <circle cx="35" cy="62" r="1.5" fill="#FFF59D"/>
+  </g>
+
+  <g id="strawberry2" transform="translate(305, 180) scale(0.8) rotate(15)">
+    <path d="M35 15 C15 15 5 45 35 75 C65 45 55 15 35 15 Z" fill="#E53935"/>
+    <ellipse cx="35" cy="20" rx="18" ry="8" fill="#C62828"/>
+    <path d="M35 12 L20 2 L28 15 L12 18 L28 22 L35 15 L42 22 L58 18 L42 15 L50 2 Z" fill="#2E7D32"/>
+    <circle cx="28" cy="35" r="1.5" fill="#FFF59D"/>
+    <circle cx="42" cy="35" r="1.5" fill="#FFF59D"/>
+    <circle cx="35" cy="48" r="1.5" fill="#FFF59D"/>
+  </g>
+
+  <g id="strawberry3" transform="translate(230, 190) scale(0.75) rotate(-18)">
+    <path d="M35 15 C15 15 5 45 35 75 C65 45 55 15 35 15 Z" fill="#C62828"/>
+    <ellipse cx="35" cy="20" rx="18" ry="8" fill="#880E4F"/>
+    <path d="M35 12 L20 2 L28 15 L12 18 L28 22 L35 15 L42 22 L58 18 L42 15 L50 2 Z" fill="#388E3C"/>
+  </g>
+
+  <!-- Chocolate Curls & Topping Sticks -->
+  <rect x="290" y="160" width="10" height="45" rx="3" fill="#3E1F0C" transform="rotate(-25 290 160)"/>
+  <rect x="315" y="165" width="8" height="40" rx="3" fill="#2B1407" transform="rotate(20 315 165)"/>
+
+  <!-- Sparkling Golden Stars -->
+  <path d="M120 180 L125 195 L140 200 L125 205 L120 220 L115 205 L100 200 L115 195 Z" fill="#D4A373" opacity="0.8"/>
+  <path d="M480 220 L483 232 L495 235 L483 238 L480 250 L477 238 L465 235 L477 232 Z" fill="#D4A373" opacity="0.8"/>
+  <path d="M450 140 L452 148 L460 150 L452 152 L450 160 L448 152 L440 150 L448 148 Z" fill="#D4A373" opacity="0.6"/>
+</svg>
